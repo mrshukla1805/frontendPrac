@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Custom-Roboto;
+    
+}
+
+@font-face {
+    font-family: 'Custom-Roboto';
+    src: url('assets/fonts/Roboto-Regular.ttf')
+}
+
+.img__header {
+    width: 100%;
+}
+
+.content {
+    margin: 4px;
+    padding: 8vw;
+    max-width: 25rem;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 8px;
+    margin-left: 8vw;
+}
+
+
+h1, p, li {
+    color: #555;
+}
+
+li::before {
+    content: "";
+    background: url('assets/images/icon-list.svg') no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width:15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: -22px;
+}
+
+
+.email{
+    margin-top: 25px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px; /* Set the border width */
+    border-style: solid; /* Set the border style (solid, dashed, etc.) */
+    border-color: red; /* Set the border color */
+   /* max-width: 300px;  Set a maximum width for the container if needed */
+}
+
+.email__label {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.email__content {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    height: 20px;
+    font-size: 15px;
+}
+
+
+.email__button {
+    margin-top: 10px;
+    height: 40px;
+    background-color:hsl(228, 45%, 44%);
+    color: #EEE;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .outermost {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img__header {
+        display: inline;
+        border: 1px solid #ccc;
+        justify-content: end;
+    }
+
+    .content {
+        display: inline;
+        border: 1px solid #ccc;
+        justify-content: start;
+    }
+}
